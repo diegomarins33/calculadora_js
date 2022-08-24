@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora do Bruce</title>
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link href="fonts/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/icons/svg/calculator-solid.svg">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+    </div>
+    <div id="calculadora">
+      <h3>Calculadora do Bruce</h3>
+      <div id="operacoes">
+        <div id="previous-operacoes"></div>
+        <div id="current-operacoes"></div>
+      </div>
+      <div id="buttons-container">
+        <button onclick="clearCurrent()">CE</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteNumber()">DEL<i class="fa-solid fa-delete-left"></i></button>
+        <button onclick="operadores('/')">/<i class="fa-solid fa-percent"></i></button>
+        <button class="numero" onclick="addNumber('7')">7<i class="fa-solid fa-7"></i></button>
+        <button class="numero" onclick="addNumber('8')">8<i class="fa-solid fa-8"></i></button>
+        <button class="numero" onclick="addNumber('9')">9<i class="fa-solid fa-9"></i></button>
+        <button onclick="operadores('*')">*<i class="fa-solid fa-xmark"></i></button>
+        <button class="numero" onclick="addNumber('4')">4<i class="fa-solid fa-4"></i></button>
+        <button class="numero" onclick="addNumber('5')">5<i class="fa-solid fa-5"></i></button>
+        <button class="numero" onclick="addNumber('6')">6<i class="fa-solid fa-6"></i></button>
+        <button onclick="operadores('-')">-<i class="fa-solid fa-minus"></i></button>
+        <button class="numero" onclick="addNumber('1')">1<i class="fa-solid fa-1"></i></button>
+        <button class="numero" onclick="addNumber('2')">2<i class="fa-solid fa-2"></i></button>
+        <button class="numero" onclick="addNumber('3')">3<i class="fa-solid fa-3"></i></button>
+        <button onclick="operadores('+')">+<i class="fa-solid fa-plus"></i></button>
+        <button class="numero" onclick="addNumber('0')">0<i class="fa-solid fa-0"></i></button>
+        <button class="numero" onclick="addNumber('.')">.</button>
+        <button id="igual-btn" onclick="sum()">=<i class="fa-solid fa-equals"></i></button>
+      </div>
+    </div>
+  </body>
+</html>
